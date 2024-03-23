@@ -1,0 +1,858 @@
+[ 2024-03-04T09:42:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index
+[ log ] www.tp5.com/admin/index/index [运行时间：1.275592s][吞吐率：0.78req/s] [内存消耗：1,946.62kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-03-04T09:42:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/login/index
+[ log ] www.tp5.com/admin/login/index [运行时间：0.123693s][吞吐率：8.08req/s] [内存消耗：1,884.35kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-03-04T11:23:23+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/login/index
+[ log ] www.tp5.com/admin/login/index [运行时间：1.051325s][吞吐率：0.95req/s] [内存消耗：2,539.91kb] [文件加载：56]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/login/index',
+  'origin' => 'http://www.tp5.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '25',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085939s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001641s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `username` = 'admin'  AND (  delete_time is null ) LIMIT 1 [ RunTime:0.006727s ]
+[ sql ] [ SQL ] UPDATE `ch_user`  SET `login_time`='2024-03-04 11:23:23'  WHERE  `id` = 2 [ RunTime:0.007628s ]
+[ sql ] [ SQL ] UPDATE `ch_user`  SET `login_num`=login_num+1  WHERE  `id` = 2 [ RunTime:0.009656s ]
+
+---------------------------------------------------------------
+[ 2024-03-04T11:23:23+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index
+[ log ] www.tp5.com/admin/index/index [运行时间：0.310621s][吞吐率：3.22req/s] [内存消耗：3,216.74kb] [文件加载：67]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\index.html [ array (
+  0 => 'menu_icon',
+  1 => 'menu',
+  2 => 'website',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001461s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001457s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001214s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001661s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.005454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_website` [ RunTime:0.001368s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_website` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT `p`.`role_id`,`p`.`menu_id`,`m`.`id`,`m`.`name`,`m`.`module_name`,`m`.`controller_name`,`m`.`view_name`,`m`.`parent_id`,`m`.`is_menu`,`m`.`sort` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `m`.`is_menu` = 1 ORDER BY m.sort asc [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_role` [ RunTime:0.001332s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 1  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 7  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 6  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 4  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 193  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 156  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 171  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 188  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 201  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 167  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 168  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 192  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 175  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000947s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.001335s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 199  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000507s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+
+---------------------------------------------------------------
+[ 2024-03-04T11:23:24+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/content
+[ log ] www.tp5.com/admin/index/content [运行时间：0.144632s][吞吐率：6.91req/s] [内存消耗：2,970.19kb] [文件加载：65]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->content[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\content.html [ array (
+  0 => 'arrField',
+  1 => 'yearMouthResult',
+  2 => 'yearMouthDayResult',
+  3 => 'arrY',
+  4 => 'arrYm',
+  5 => 'arrYmd',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001092s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001691s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001460s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001284s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000783s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.014589s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024-03%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000799s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024-03-04%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.006423s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2024-03-04%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.001647s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2024-03%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000806s ]
+[ sql ] [ SQL ] select case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end as name from ch_app_trace a where a.update_time like "%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.001118s ]
+[ error ] [8]未定义变量: year[E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php:115]
+
+---------------------------------------------------------------
+[ 2024-03-04T11:23:24+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/favicon.ico
+[ log ] www.tp5.com/admin/index/favicon.ico [运行时间：0.068258s][吞吐率：14.65req/s] [内存消耗：3,027.20kb] [文件加载：60]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001075s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001292s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001520s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.003992s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000721s ]
+
+---------------------------------------------------------------
+[ 2024-03-04T13:17:14+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/gatheradmin
+[ log ] www.tp5.com/admin/gather/gatheradmin [运行时间：1.051565s][吞吐率：0.95req/s] [内存消耗：3,144.60kb] [文件加载：70]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatheradmin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherAdmin[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\gatheradmin.html [ array (
+  0 => 'viewMenu',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001114s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001354s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Gather'  AND `view_name` = 'gatheradmin' LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001220s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (185,186,187) [ RunTime:0.016914s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_backend` [ RunTime:0.001700s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL ORDER BY id desc LIMIT 0,10 [ RunTime:0.000343s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:51]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+
+---------------------------------------------------------------
+[ 2024-03-04T15:22:44+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/savegatheradmin
+[ log ] www.tp5.com/admin/gather/savegatheradmin [运行时间：0.840650s][吞吐率：1.19req/s] [内存消耗：2,871.74kb] [文件加载：61]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'savegatheradmin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/gather/gatheradmin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->saveGatherAdmin[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\savegatheradmin.html [ array (
+  0 => 'getInfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001290s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_backend` [ RunTime:0.001273s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL  AND `id` = 0 LIMIT 1 [ RunTime:0.000335s ]
+
+---------------------------------------------------------------
+[ 2024-03-04T15:22:46+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/gatheradmin
+[ log ] www.tp5.com/admin/gather/gatheradmin [运行时间：0.191408s][吞吐率：5.22req/s] [内存消耗：3,144.60kb] [文件加载：70]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatheradmin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherAdmin[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\gatheradmin.html [ array (
+  0 => 'viewMenu',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001051s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001212s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Gather'  AND `view_name` = 'gatheradmin' LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001439s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (185,186,187) [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_backend` [ RunTime:0.001233s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL ORDER BY id desc LIMIT 0,10 [ RunTime:0.000307s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:51]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+
+---------------------------------------------------------------
+[ 2024-03-04T15:30:14+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/api
+[ log ] www.tp5.com/admin/gather/api [运行时间：0.026829s][吞吐率：37.27req/s] [内存消耗：1,897.16kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'api',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->api[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\api.html [ array (
+  0 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-03-04T15:40:33+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/api
+[ log ] www.tp5.com/admin/gather/api [运行时间：1.211851s][吞吐率：0.83req/s] [内存消耗：1,897.16kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'api',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->api[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\api.html [ array (
+  0 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-03-04T15:47:35+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/gatherdata
+[ log ] www.tp5.com/admin/gather/gatherdata [运行时间：1.009589s][吞吐率：0.99req/s] [内存消耗：3,245.02kb] [文件加载：69]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatherdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherData[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\gatherdata.html [ array (
+  0 => 'viewMenu',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001041s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001779s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Gather'  AND `view_name` = 'gatherdata' LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001191s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (182,183,184) [ RunTime:0.000450s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+
+---------------------------------------------------------------
+[ 2024-03-04T15:47:38+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/menu/mlist
+[ log ] www.tp5.com/admin/menu/mlist [运行时间：0.148101s][吞吐率：6.75req/s] [内存消耗：3,280.94kb] [文件加载：67]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menu',
+    2 => 'mlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Menu->mList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Menu.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\menu\mlist.html [ array (
+  0 => 'menu',
+  1 => 'viewMenu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001483s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.003013s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.002136s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001509s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` ORDER BY sort asc [ RunTime:0.000953s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Menu'  AND `view_name` = 'mlist' LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (41,42,43) [ RunTime:0.000544s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 菜单新增 - assumed '菜单新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:51]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+
+---------------------------------------------------------------
+[ 2024-03-04T16:15:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/savegather?id=145
+[ log ] www.tp5.com/admin/gather/savegather?id=145 [运行时间：0.958535s][吞吐率：1.04req/s] [内存消耗：2,837.98kb] [文件加载：59]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'savegather',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4t5u22rfvkd3se49mme8m7dcgm',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/gather/gatherdata',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '145',
+)
+[ info ] [ RUN ] app\admin\controller\Gather->saveGather[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\savegather.html [ array (
+  0 => 'getInfo',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

@@ -1,0 +1,912 @@
+[ 2024-01-11T16:22:43+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/gather/gatherlist
+[ log ] www.tp5.com/admin/gather/gatherlist [运行时间：0.508568s][吞吐率：1.97req/s] [内存消耗：2,802.13kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatherlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p68d4hbg3gbrse2grf5hu36lht',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/gather/gatherlist',
+  'origin' => 'http://www.tp5.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '98',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'h1',
+  'title_class' => '1',
+  'content_class' => '1',
+  'link' => 'https://www.gamesradar.com/uk/news/games/',
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084706s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_backend` [ RunTime:0.036770s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'kwywords' in 'where clause'[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Connection.php:383]
+
+---------------------------------------------------------------
+[ 2024-01-11T16:22:51+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/gather/gatherlist
+[ log ] www.tp5.com/admin/gather/gatherlist [运行时间：0.219488s][吞吐率：4.56req/s] [内存消耗：2,813.66kb] [文件加载：58]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatherlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p68d4hbg3gbrse2grf5hu36lht',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/gather/gatherlist',
+  'origin' => 'http://www.tp5.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '98',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'h1',
+  'title_class' => '1',
+  'content_class' => '1',
+  'link' => 'https://www.gamesradar.com/uk/news/games/',
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011167s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_backend` [ RunTime:0.052563s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL  AND (  keywords is null ) [ RunTime:0.005272s ]
+
+---------------------------------------------------------------
+[ 2024-01-11T16:39:32+08:00 ] 0.0.0.0 0.0.0.0 CLI 
+[ log ] cmd:think GatherGamesradar [运行时间：5.766312s][吞吐率：0.17req/s] [内存消耗：6,085.22kb] [文件加载：93]
+[ info ] 定时计划测试：每天1hours准时采集数据 ------- GatherGameinformer
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] -------------------------------------------------------------------------------https://www.gamesradar.com/uk/news/games/
+[ info ] ------------------------------------------------------------------------------------1
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091796s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_backend` [ RunTime:0.062775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL  AND `keywords` = 'gamesradar' LIMIT 1 [ RunTime:0.064816s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL  AND `keywords` = 'gamesradar' [ RunTime:0.000438s ]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 775[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 777[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag nav invalid in Entity, line: 787[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 798[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 798[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 798[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 798[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 798[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 798[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 799[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag g invalid in Entity, line: 801[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 802[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 803[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 804[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 896[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 896[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 903[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 903[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 907[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 907[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 911[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag circle invalid in Entity, line: 911[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 911[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 913[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag g invalid in Entity, line: 913[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 913[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag g invalid in Entity, line: 913[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 913[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 913[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 915[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag circle invalid in Entity, line: 915[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 915[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 917[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag circle invalid in Entity, line: 917[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 917[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 919[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 919[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 919[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 927[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 927[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 929[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 929[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 929[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 931[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 931[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 931[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 933[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 933[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 933[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 935[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 935[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag aside invalid in Entity, line: 940[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 1008[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1008[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1008[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 1012[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1012[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag defs invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag clippath invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag use invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag g invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag defs invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag clippath invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag use invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1016[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag nav invalid in Entity, line: 1056[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : style in Entity, line: 1067[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : style in Entity, line: 1067[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): End tag : expected '>' in Entity, line: 1067[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : g in Entity, line: 1067[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): End tag : expected '>' in Entity, line: 1067[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : g in Entity, line: 1067[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag aside invalid in Entity, line: 1083[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1086[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag section invalid in Entity, line: 1089[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1092[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1095[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1095[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1095[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figcaption invalid in Entity, line: 1098[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1106[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1109[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1109[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1109[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figcaption invalid in Entity, line: 1112[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1120[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1123[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1123[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1123[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figcaption invalid in Entity, line: 1126[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag section invalid in Entity, line: 1134[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1135[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1145[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1147[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1150[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+
+---------------------------------------------------------------
+[ 2024-01-11T16:39:32+08:00 ] 0.0.0.0 0.0.0.0 CLI 
+[ log ] cmd:think GatherGamesradar [运行时间：5.769934s][吞吐率：0.17req/s] [内存消耗：6,083.45kb] [文件加载：93]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1150[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1150[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1156[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1164[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1177[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1179[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1182[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1182[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1182[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1188[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1196[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1209[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1211[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1214[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1214[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1214[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1220[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1228[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1241[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1243[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1246[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1246[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1246[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1252[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1260[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1273[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1275[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1278[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1278[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1278[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1284[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1292[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1305[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1307[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1310[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1310[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1310[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1316[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1324[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1337[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1339[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1342[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1342[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1342[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1348[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1356[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1369[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1371[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1374[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1374[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1374[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1380[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1388[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1401[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1403[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1406[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1406[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1406[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1412[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1420[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1433[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1435[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1438[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1438[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1438[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1444[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1452[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1465[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1467[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1470[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1470[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1470[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1476[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1484[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1497[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1499[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1502[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1502[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1502[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1508[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1516[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1529[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1531[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1534[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1534[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1534[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1540[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1548[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1561[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1563[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1566[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1566[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1566[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1572[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1580[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1593[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1595[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1598[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1598[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1598[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1604[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+
+---------------------------------------------------------------
+[ 2024-01-11T16:39:32+08:00 ] 0.0.0.0 0.0.0.0 CLI 
+[ log ] cmd:think GatherGamesradar [运行时间：6.192588s][吞吐率：0.16req/s] [内存消耗：5,620.80kb] [文件加载：94]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1612[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1625[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1627[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1630[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1630[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1630[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1636[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1644[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1657[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1659[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1662[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1662[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1662[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1668[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1676[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1689[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1691[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1694[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1694[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1694[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1700[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1708[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1721[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1723[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1726[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1726[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1726[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1732[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1740[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag article invalid in Entity, line: 1753[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag figure invalid in Entity, line: 1755[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag picture invalid in Entity, line: 1758[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1758[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag source invalid in Entity, line: 1758[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1764[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag time invalid in Entity, line: 1772[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : figure in Entity, line: 1845[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag header invalid in Entity, line: 1848[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : article in Entity, line: 1857[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1858[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : script in Entity, line: 1860[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : div in Entity, line: 1860[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : section in Entity, line: 1861[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : div in Entity, line: 1862[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag section invalid in Entity, line: 1862[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag section invalid in Entity, line: 1885[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 1885[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1885[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag g invalid in Entity, line: 1885[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1885[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1885[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1885[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag path invalid in Entity, line: 1885[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag section invalid in Entity, line: 1885[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag footer invalid in Entity, line: 1885[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag section invalid in Entity, line: 1894[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : div in Entity, line: 1899[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag footer invalid in Entity, line: 1964[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [2]DOMDocument::loadHTML(): Tag nav invalid in Entity, line: 1967[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\phpQuery.php:341]
+[ error ] [0]Fatal error: Call to undefined function QL\each()[E:\phpstudy_pro\WWW\www.tp5.com\extend\QL\QueryList.php:216]
+
+---------------------------------------------------------------
+[ 2024-01-11T16:51:41+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/api
+[ log ] www.tp5.com/admin/gather/api [运行时间：0.455651s][吞吐率：2.19req/s] [内存消耗：2,030.78kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'api',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p68d4hbg3gbrse2grf5hu36lht',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->api[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\api.html [ array (
+  0 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-01-11T16:51:56+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index
+[ log ] www.tp5.com/admin/index/index [运行时间：2.989615s][吞吐率：0.33req/s] [内存消耗：3,219.52kb] [文件加载：67]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p68d4hbg3gbrse2grf5hu36lht',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\index.html [ array (
+  0 => 'menu_icon',
+  1 => 'menu',
+  2 => 'website',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.774921s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.063762s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.056919s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.210345s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.234114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.058198s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199) [ RunTime:0.191611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_website` [ RunTime:0.378561s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_website` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.056383s ]
+[ sql ] [ SQL ] SELECT `p`.`role_id`,`p`.`menu_id`,`m`.`id`,`m`.`name`,`m`.`module_name`,`m`.`controller_name`,`m`.`view_name`,`m`.`parent_id`,`m`.`is_menu`,`m`.`sort` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `m`.`is_menu` = 1 ORDER BY m.sort asc [ RunTime:0.125699s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_role` [ RunTime:0.134035s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.012722s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.001415s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 1  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.020238s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 7  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.002003s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.001692s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 6  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 4  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 193  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 156  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.005269s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.001972s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 171  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.001528s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 188  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.001221s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001296s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 167  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.001775s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 168  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 192  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.001077s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 175  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.001422s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.002445s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 199  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000983s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 176  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 179  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 181  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000924s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+
+---------------------------------------------------------------
+[ 2024-01-11T16:51:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/content
+[ log ] www.tp5.com/admin/index/content [运行时间：0.585665s][吞吐率：1.71req/s] [内存消耗：2,965.10kb] [文件加载：65]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p68d4hbg3gbrse2grf5hu36lht',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->content[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\content.html [ array (
+  0 => 'arrField',
+  1 => 'yearMouthResult',
+  2 => 'yearMouthDayResult',
+  3 => 'arrY',
+  4 => 'arrYm',
+  5 => 'arrYmd',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.054795s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.039896s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.002217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.005560s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.003683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.022919s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199) [ RunTime:0.000860s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.022775s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024-01%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.006669s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024-01-11%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.030434s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2024-01-11%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.033247s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2024-01%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.021055s ]
+[ sql ] [ SQL ] select case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end as name from ch_app_trace a where a.update_time like "%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.019166s ]
+[ error ] [8]未定义变量: year[E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php:115]
+
+---------------------------------------------------------------
+[ 2024-01-11T16:51:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/favicon.ico
+[ log ] www.tp5.com/admin/index/favicon.ico [运行时间：0.270543s][吞吐率：3.70req/s] [内存消耗：3,014.97kb] [文件加载：60]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p68d4hbg3gbrse2grf5hu36lht',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024469s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.016055s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.019583s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.010502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.036277s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199) [ RunTime:0.021153s ]
+
+---------------------------------------------------------------
+[ 2024-01-11T17:11:32+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index
+[ log ] www.tp5.com/admin/index/index [运行时间：0.801055s][吞吐率：1.25req/s] [内存消耗：3,218.02kb] [文件加载：67]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p68d4hbg3gbrse2grf5hu36lht',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\index.html [ array (
+  0 => 'menu_icon',
+  1 => 'menu',
+  2 => 'website',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.054592s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.080192s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.002280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.007332s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.001530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.015093s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199) [ RunTime:0.003870s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_website` [ RunTime:0.152328s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_website` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT `p`.`role_id`,`p`.`menu_id`,`m`.`id`,`m`.`name`,`m`.`module_name`,`m`.`controller_name`,`m`.`view_name`,`m`.`parent_id`,`m`.`is_menu`,`m`.`sort` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `m`.`is_menu` = 1 ORDER BY m.sort asc [ RunTime:0.001669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_role` [ RunTime:0.056207s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002014s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.001869s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 1  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.003125s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 7  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.001463s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 6  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 4  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 193  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 156  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 171  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 188  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 167  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.034003s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 168  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 192  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 175  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 199  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 176  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 179  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 181  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199)  AND `is_menu` = 1 [ RunTime:0.000443s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+
+---------------------------------------------------------------
+[ 2024-01-11T17:11:33+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/content
+[ log ] www.tp5.com/admin/index/content [运行时间：0.403210s][吞吐率：2.48req/s] [内存消耗：2,965.10kb] [文件加载：65]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p68d4hbg3gbrse2grf5hu36lht',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->content[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\content.html [ array (
+  0 => 'arrField',
+  1 => 'yearMouthResult',
+  2 => 'yearMouthDayResult',
+  3 => 'arrY',
+  4 => 'arrYm',
+  5 => 'arrYmd',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006359s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.037901s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.003625s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.012571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.010301s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199) [ RunTime:0.015133s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.108857s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024-01%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.002359s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024-01-11%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.002385s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2024-01-11%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.002126s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2024-01%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.002597s ]
+[ sql ] [ SQL ] select case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end as name from ch_app_trace a where a.update_time like "%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.002346s ]
+[ error ] [8]未定义变量: year[E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php:115]
+
+---------------------------------------------------------------
+[ 2024-01-11T17:11:33+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/favicon.ico
+[ log ] www.tp5.com/admin/index/favicon.ico [运行时间：0.131224s][吞吐率：7.62req/s] [内存消耗：3,014.97kb] [文件加载：60]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p68d4hbg3gbrse2grf5hu36lht',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006356s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.007715s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.005557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.024087s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.017005s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199) [ RunTime:0.015467s ]
+
+---------------------------------------------------------------
+[ 2024-01-11T17:11:45+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/api
+[ log ] www.tp5.com/admin/gather/api [运行时间：0.104630s][吞吐率：9.56req/s] [内存消耗：2,029.28kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'api',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p68d4hbg3gbrse2grf5hu36lht',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->api[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\api.html [ array (
+  0 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-01-11T18:05:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index
+[ log ] www.tp5.com/admin/index/index [运行时间：0.491344s][吞吐率：2.04req/s] [内存消耗：1,944.90kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-01-11T18:05:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/login/index
+[ log ] www.tp5.com/admin/login/index [运行时间：0.098397s][吞吐率：10.16req/s] [内存消耗：1,883.21kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=3novaoci2dv4fg7ebdbaht88s8',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

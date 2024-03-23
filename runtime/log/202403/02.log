@@ -1,0 +1,1555 @@
+[ 2024-03-02T09:10:22+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index
+[ log ] www.tp5.com/admin/index/index [运行时间：1.460761s][吞吐率：0.68req/s] [内存消耗：3,219.13kb] [文件加载：67]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\index.html [ array (
+  0 => 'menu_icon',
+  1 => 'menu',
+  2 => 'website',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058527s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001141s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_website` [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_website` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT `p`.`role_id`,`p`.`menu_id`,`m`.`id`,`m`.`name`,`m`.`module_name`,`m`.`controller_name`,`m`.`view_name`,`m`.`parent_id`,`m`.`is_menu`,`m`.`sort` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `m`.`is_menu` = 1 ORDER BY m.sort asc [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_role` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 1  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 7  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 6  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 4  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 193  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 156  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.001002s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 171  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 188  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 201  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 167  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 168  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 192  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 175  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 199  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000429s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+
+---------------------------------------------------------------
+[ 2024-03-02T09:10:22+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/content
+[ log ] www.tp5.com/admin/index/content [运行时间：0.088056s][吞吐率：11.36req/s] [内存消耗：2,970.19kb] [文件加载：65]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->content[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\content.html [ array (
+  0 => 'arrField',
+  1 => 'yearMouthResult',
+  2 => 'yearMouthDayResult',
+  3 => 'arrY',
+  4 => 'arrYm',
+  5 => 'arrYmd',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004013s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000586s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000430s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024-03%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000328s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024-03-02%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000286s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2024-03-02%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000318s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2024-03%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000356s ]
+[ sql ] [ SQL ] select case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end as name from ch_app_trace a where a.update_time like "%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.001024s ]
+[ error ] [8]未定义变量: year[E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php:115]
+
+---------------------------------------------------------------
+[ 2024-03-02T09:10:23+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/favicon.ico
+[ log ] www.tp5.com/admin/index/favicon.ico [运行时间：0.037421s][吞吐率：26.72req/s] [内存消耗：3,027.20kb] [文件加载：60]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002735s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001157s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000645s ]
+
+---------------------------------------------------------------
+[ 2024-03-02T09:10:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/logs/logslist
+[ log ] www.tp5.com/admin/logs/logslist [运行时间：0.270485s][吞吐率：3.70req/s] [内存消耗：3,136.56kb] [文件加载：68]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'logs',
+    2 => 'logslist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Logs->logsList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Logs.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\logs\logslist.html [ array (
+  0 => 'user',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001479s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_logs` [ RunTime:0.001231s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_logs` LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_logs` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`open`,`role_id` FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL ORDER BY id desc [ RunTime:0.000614s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000383s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000167s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000165s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000169s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000167s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000174s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000167s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000173s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000172s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000172s ]
+
+---------------------------------------------------------------
+[ 2024-03-02T09:10:58+08:00 ] 127.0.0.1 127.0.0.1 GET /public/static/admin/js/content.js?v=1.0.0
+[ log ] www.tp5.com/public/static/admin/js/content.js?v=1.0.0 [运行时间：0.106498s][吞吐率：9.39req/s] [内存消耗：1,605.53kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/logs/logslist',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'v' => '1.0.0',
+  'js' => 'content.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-03-02T10:31:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index
+[ log ] www.tp5.com/admin/index/index [运行时间：1.214745s][吞吐率：0.82req/s] [内存消耗：3,219.13kb] [文件加载：67]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\index.html [ array (
+  0 => 'menu_icon',
+  1 => 'menu',
+  2 => 'website',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001116s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001196s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001254s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001899s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_website` [ RunTime:0.001644s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_website` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT `p`.`role_id`,`p`.`menu_id`,`m`.`id`,`m`.`name`,`m`.`module_name`,`m`.`controller_name`,`m`.`view_name`,`m`.`parent_id`,`m`.`is_menu`,`m`.`sort` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `m`.`is_menu` = 1 ORDER BY m.sort asc [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_role` [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 1  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 7  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 6  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 4  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 193  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 156  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 171  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 188  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 201  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 167  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 168  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 192  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 175  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 199  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000434s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+
+---------------------------------------------------------------
+[ 2024-03-02T10:31:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/content
+[ log ] www.tp5.com/admin/index/content [运行时间：0.071659s][吞吐率：13.95req/s] [内存消耗：2,970.19kb] [文件加载：65]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->content[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\content.html [ array (
+  0 => 'arrField',
+  1 => 'yearMouthResult',
+  2 => 'yearMouthDayResult',
+  3 => 'arrY',
+  4 => 'arrYm',
+  5 => 'arrYmd',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001177s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000719s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000540s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024-03%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000412s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024-03-02%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000391s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2024-03-02%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000411s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2024-03%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000420s ]
+[ sql ] [ SQL ] select case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end as name from ch_app_trace a where a.update_time like "%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000553s ]
+[ error ] [8]未定义变量: year[E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php:115]
+
+---------------------------------------------------------------
+[ 2024-03-02T10:31:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/favicon.ico
+[ log ] www.tp5.com/admin/index/favicon.ico [运行时间：0.037756s][吞吐率：26.49req/s] [内存消耗：3,027.20kb] [文件加载：60]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001090s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000584s ]
+
+---------------------------------------------------------------
+[ 2024-03-02T10:31:50+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/api
+[ log ] www.tp5.com/admin/gather/api [运行时间：0.122501s][吞吐率：8.16req/s] [内存消耗：1,897.16kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'api',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->api[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\api.html [ array (
+  0 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-03-02T11:36:17+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/logs/liveupdatelogslist
+[ log ] www.tp5.com/admin/logs/liveupdatelogslist [运行时间：1.183775s][吞吐率：0.84req/s] [内存消耗：3,028.55kb] [文件加载：67]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'logs',
+    2 => 'liveupdatelogslist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Logs->liveUpdateLogsList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Logs.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\logs\liveupdatelogslist.html [ array (
+  0 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002527s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_logs` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_logs` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_logs` WHERE  `status` = 2 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000572s ]
+
+---------------------------------------------------------------
+[ 2024-03-02T11:36:17+08:00 ] 127.0.0.1 127.0.0.1 GET /public/static/admin/js/content.js?v=1.0.0
+[ log ] www.tp5.com/public/static/admin/js/content.js?v=1.0.0 [运行时间：0.107854s][吞吐率：9.27req/s] [内存消耗：1,605.58kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/logs/liveupdatelogslist',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'v' => '1.0.0',
+  'js' => 'content.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-03-02T13:19:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/trace/projectgather
+[ log ] www.tp5.com/admin/trace/projectgather [运行时间：1.412829s][吞吐率：0.71req/s] [内存消耗：3,094.01kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'projectgather',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->projectgather[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\trace\projectgather.html [ array (
+  0 => 'time',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059674s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001726s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `b_project` FROM `ch_app_trace` WHERE  (  b_project <> ""  ) [ RunTime:0.001330s ]
+[ sql ] [ SQL ] SELECT `b_project`,SUM(CASE WHEN status = "1" THEN 1 ELSE 0 END) AS 已上架,SUM(CASE WHEN status = "2" THEN 1 ELSE 0 END) AS 审核中,SUM(CASE WHEN status = "3" THEN 1 ELSE 0 END) AS 待审核,SUM(CASE WHEN status = "4" THEN 1 ELSE 0 END) AS 账号禁用,SUM(CASE WHEN status = "5" THEN 1 ELSE 0 END) AS 分配中,SUM(CASE WHEN status = "6" THEN 1 ELSE 0 END) AS 已暂停,SUM(CASE WHEN status = "7" THEN 1 ELSE 0 END) AS 待验证,SUM(CASE WHEN status = "8" THEN 1 ELSE 0 END) AS 已下架,SUM(CASE WHEN status = "9" THEN 1 ELSE 0 END) AS 账号关联,SUM(CASE WHEN status = "10" THEN 1 ELSE 0 END) AS 更新中,SUM(CASE WHEN status = "11" THEN 1 ELSE 0 END) AS 其他 FROM `ch_app_trace` WHERE  `b_project` IN ('泽泽','dobet','7bet','菲律宾','23')  AND `update_time` >  '2024-01-01 00:00:00' GROUP BY b_project [ RunTime:0.001428s ]
+
+---------------------------------------------------------------
+[ 2024-03-02T13:19:17+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/menu/mlist
+[ log ] www.tp5.com/admin/menu/mlist [运行时间：0.206910s][吞吐率：4.83req/s] [内存消耗：3,280.94kb] [文件加载：67]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menu',
+    2 => 'mlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Menu->mList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Menu.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\menu\mlist.html [ array (
+  0 => 'menu',
+  1 => 'viewMenu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014015s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` ORDER BY sort asc [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Menu'  AND `view_name` = 'mlist' LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (41,42,43) [ RunTime:0.000657s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 菜单新增 - assumed '菜单新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:51]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:89]
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\666006252aad3199d7bbf875122e5473.php:91]
+
+---------------------------------------------------------------
+[ 2024-03-02T14:55:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index
+[ log ] www.tp5.com/admin/index/index [运行时间：1.369248s][吞吐率：0.73req/s] [内存消耗：3,219.13kb] [文件加载：67]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\index.html [ array (
+  0 => 'menu_icon',
+  1 => 'menu',
+  2 => 'website',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003364s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_website` [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_website` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT `p`.`role_id`,`p`.`menu_id`,`m`.`id`,`m`.`name`,`m`.`module_name`,`m`.`controller_name`,`m`.`view_name`,`m`.`parent_id`,`m`.`is_menu`,`m`.`sort` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `m`.`is_menu` = 1 ORDER BY m.sort asc [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_role` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 1  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 7  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 6  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 4  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 193  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 156  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 171  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 188  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 201  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 167  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 168  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 192  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 175  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 199  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000648s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+
+---------------------------------------------------------------
+[ 2024-03-02T14:55:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/content
+[ log ] www.tp5.com/admin/index/content [运行时间：0.094806s][吞吐率：10.55req/s] [内存消耗：2,970.19kb] [文件加载：65]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->content[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\content.html [ array (
+  0 => 'arrField',
+  1 => 'yearMouthResult',
+  2 => 'yearMouthDayResult',
+  3 => 'arrY',
+  4 => 'arrYm',
+  5 => 'arrYmd',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002328s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000776s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000443s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024-03%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000308s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2024-03-02%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000279s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2024-03-02%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000300s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2024-03%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000483s ]
+[ sql ] [ SQL ] select case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end as name from ch_app_trace a where a.update_time like "%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000672s ]
+[ error ] [8]未定义变量: year[E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php:115]
+
+---------------------------------------------------------------
+[ 2024-03-02T14:55:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/favicon.ico
+[ log ] www.tp5.com/admin/index/favicon.ico [运行时间：0.040236s][吞吐率：24.85req/s] [内存消耗：3,027.20kb] [文件加载：60]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001132s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000802s ]
+
+---------------------------------------------------------------
+[ 2024-03-02T14:55:39+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/trace/projectgather
+[ log ] www.tp5.com/admin/trace/projectgather [运行时间：0.118422s][吞吐率：8.44req/s] [内存消耗：3,094.01kb] [文件加载：63]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'projectgather',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->projectgather[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\trace\projectgather.html [ array (
+  0 => 'time',
+  1 => 'result',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005148s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001160s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `b_project` FROM `ch_app_trace` WHERE  (  b_project <> ""  ) [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT `b_project`,SUM(CASE WHEN status = "1" THEN 1 ELSE 0 END) AS 已上架,SUM(CASE WHEN status = "2" THEN 1 ELSE 0 END) AS 审核中,SUM(CASE WHEN status = "3" THEN 1 ELSE 0 END) AS 待审核,SUM(CASE WHEN status = "4" THEN 1 ELSE 0 END) AS 账号禁用,SUM(CASE WHEN status = "5" THEN 1 ELSE 0 END) AS 分配中,SUM(CASE WHEN status = "6" THEN 1 ELSE 0 END) AS 已暂停,SUM(CASE WHEN status = "7" THEN 1 ELSE 0 END) AS 待验证,SUM(CASE WHEN status = "8" THEN 1 ELSE 0 END) AS 已下架,SUM(CASE WHEN status = "9" THEN 1 ELSE 0 END) AS 账号关联,SUM(CASE WHEN status = "10" THEN 1 ELSE 0 END) AS 更新中,SUM(CASE WHEN status = "11" THEN 1 ELSE 0 END) AS 其他 FROM `ch_app_trace` WHERE  `b_project` IN ('泽泽','dobet','7bet','菲律宾','23')  AND `update_time` >  '2024-01-01 00:00:00' GROUP BY b_project [ RunTime:0.000696s ]
+
+---------------------------------------------------------------
+[ 2024-03-02T15:09:52+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index
+[ log ] www.tp5.com/admin/index/index [运行时间：1.102578s][吞吐率：0.91req/s] [内存消耗：3,218.25kb] [文件加载：67]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/login/index',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\index\index.html [ array (
+  0 => 'menu_icon',
+  1 => 'menu',
+  2 => 'website',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003732s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_website` [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_website` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT `p`.`role_id`,`p`.`menu_id`,`m`.`id`,`m`.`name`,`m`.`module_name`,`m`.`controller_name`,`m`.`view_name`,`m`.`parent_id`,`m`.`is_menu`,`m`.`sort` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `m`.`is_menu` = 1 ORDER BY m.sort asc [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_role` [ RunTime:0.001450s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 1  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 7  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 6  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 4  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 193  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 156  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 171  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 188  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 201  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 167  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 168  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 192  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 175  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 ORDER BY sort asc [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 199  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203)  AND `is_menu` = 1 [ RunTime:0.000389s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+[ error ] [8]未定义数组索引: child[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d525b95587cebd7aaf53d689da26fe2d.php:50]
+
+---------------------------------------------------------------
+[ 2024-03-02T15:09:52+08:00 ] 127.0.0.1 127.0.0.1 GET /public/home/health/css/bootstrap.min.css.map
+[ log ] www.tp5.com/public/home/health/css/bootstrap.min.css.map [运行时间：0.160563s][吞吐率：6.23req/s] [内存消耗：1,604.68kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'home',
+    2 => 'health',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-03-02T15:09:52+08:00 ] 127.0.0.1 127.0.0.1 GET /public/static/admin/css/bootstrap.min.css.map
+[ log ] www.tp5.com/public/static/admin/css/bootstrap.min.css.map [运行时间：0.162251s][吞吐率：6.16req/s] [内存消耗：1,604.68kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-03-02T15:09:52+08:00 ] 127.0.0.1 127.0.0.1 GET /public/static/admin/css/bootstrap.min.css.map
+[ log ] www.tp5.com/public/static/admin/css/bootstrap.min.css.map [运行时间：0.021682s][吞吐率：46.12req/s] [内存消耗：1,604.68kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-03-02T15:26:54+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/trace/showproject
+[ log ] www.tp5.com/admin/trace/showproject [运行时间：1.096415s][吞吐率：0.91req/s] [内存消耗：3,055.41kb] [文件加载：62]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'showproject',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/trace/projectgather',
+  'origin' => 'http://www.tp5.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '21',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'b_project' => '23',
+  'status' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->showProject[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003169s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `b_project` = '23'  AND `status` = 1 [ RunTime:0.000917s ]
+
+---------------------------------------------------------------
+[ 2024-03-02T16:48:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/trace/tostatusonelist
+[ log ] www.tp5.com/admin/trace/tostatusonelist [运行时间：1.732399s][吞吐率：0.58req/s] [内存消耗：3,643.88kb] [文件加载：72]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'tostatusonelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->toStatusOneList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\trace\tostatusonelist.html [ array (
+  0 => 'viewMenu',
+  1 => 'count',
+  2 => 'userInfo',
+  3 => 'b_project',
+  4 => 'bProject',
+  5 => 'app_type',
+  6 => 'app_name',
+  7 => 'status',
+  8 => 'package_name',
+  9 => 'bag_vps',
+  10 => 'bag_time',
+  11 => 'domain_url',
+  12 => 'app_password',
+  13 => 'info',
+  14 => 'role_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036102s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202,203) [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tostatusonelist' LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 171 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (172,173,174) [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001577s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `status` = 1  AND `app_name` <> ' ' LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `status` = 1  AND `app_name` <> ' ' ORDER BY id desc LIMIT 0,10 [ RunTime:0.001060s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `status` = 1  AND `app_name` <> ' ' LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname` FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `open` = 'on' ORDER BY id asc [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `b_project` [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT * FROM `b_project` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.001368s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 262 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 262 LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 261 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 261 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 237 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 237 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 232 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 232 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 181 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 181 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 178 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 178 LIMIT 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 159 LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 159 LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 140 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 140 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 135 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 135 LIMIT 1 [ RunTime:0.000211s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [8]未定义变量: api_vps[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:74]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+
+---------------------------------------------------------------
+[ 2024-03-02T16:48:57+08:00 ] 127.0.0.1 127.0.0.1 GET /public/home/health/css/bootstrap.min.css.map
+[ log ] www.tp5.com/public/home/health/css/bootstrap.min.css.map [运行时间：0.151820s][吞吐率：6.59req/s] [内存消耗：1,604.68kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'home',
+    2 => 'health',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-03-02T17:45:38+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/gatheradmin
+[ log ] www.tp5.com/admin/gather/gatheradmin [运行时间：1.634555s][吞吐率：0.61req/s] [内存消耗：3,144.60kb] [文件加载：70]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatheradmin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherAdmin[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\gatheradmin.html [ array (
+  0 => 'viewMenu',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001435s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Gather'  AND `view_name` = 'gatheradmin' LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (185,186,187) [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_backend` [ RunTime:0.011233s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL ORDER BY id desc LIMIT 0,10 [ RunTime:0.000262s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:51]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+
+---------------------------------------------------------------

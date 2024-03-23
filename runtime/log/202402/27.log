@@ -1,0 +1,1220 @@
+[ 2024-02-27T09:20:01+08:00 ] 127.0.0.1 127.0.0.1 GET /public/home/health/css/bootstrap.min.css.map
+[ log ] www.tp5.com/public/home/health/css/bootstrap.min.css.map [运行时间：0.198106s][吞吐率：5.05req/s] [内存消耗：1,605.26kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'home',
+    2 => 'health',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+-
+[ 2024-02-27T09:20:01+08:00 ] 127.0.0.1 127.0.0.1 GET /public/home/health/css/bootstrap.min.css.map
+[ log ] www.tp5.com/public/home/health/css/bootstrap.min.css.map [运行时间：0.030963s][吞吐率：32.30req/s] [内存消耗：1,605.26kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'home',
+    2 => 'health',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+-
+[ 2024-02-27T09:27:24+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/trace/tracelist
+[ log ] www.tp5.com/admin/trace/tracelist [运行时间：0.843241s][吞吐率：1.19req/s] [内存消耗：3,655.76kb] [文件加载：72]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'tracelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->traceList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\trace\tracelist.html [ array (
+  0 => 'viewMenu',
+  1 => 'b_project',
+  2 => 'bProject',
+  3 => 'count',
+  4 => 'userInfo',
+  5 => 'app_type',
+  6 => 'app_name',
+  7 => 'status',
+  8 => 'package_name',
+  9 => 'api_vps',
+  10 => 'bag_time',
+  11 => 'domain_url',
+  12 => 'app_password',
+  13 => 'info',
+  14 => 'role_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003488s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001281s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202) [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196,197,198) [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001821s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `app_name` <> ' ' LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `app_name` <> ' ' ORDER BY id desc LIMIT 0,10 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `app_name` <> ' ' LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname` FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `open` = 'on' ORDER BY id asc [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `b_project` [ RunTime:0.001162s ]
+[ sql ] [ SQL ] SELECT * FROM `b_project` [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.001409s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 165 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 165 LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 164 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 164 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 163 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 163 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 162 LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 162 LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 161 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 161 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 160 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 160 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 159 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 159 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 158 LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 158 LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000204s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:58]
+[ error ] [8]未定义变量: bag_vps[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:80]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+
+---------------------------------------------------------------
+[ 2024-02-27T09:27:25+08:00 ] 127.0.0.1 127.0.0.1 GET /public/home/health/css/bootstrap.min.css.map
+[ log ] www.tp5.com/public/home/health/css/bootstrap.min.css.map [运行时间：0.030697s][吞吐率：32.58req/s] [内存消耗：1,605.27kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'home',
+    2 => 'health',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-02-27T09:27:26+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/trace/publicsavetrace?id=165
+[ log ] www.tp5.com/admin/trace/publicsavetrace?id=165 [运行时间：0.206851s][吞吐率：4.83req/s] [内存消耗：3,273.75kb] [文件加载：70]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'publicsavetrace',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/trace/tracelist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '165',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->publicSaveTrace[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\trace\publicsavetrace.html [ array (
+  0 => 'getInfo',
+  1 => 'userInfo',
+  2 => 'chats',
+  3 => 'tele_chatid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003285s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001752s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202) [ RunTime:0.000661s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001221s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 165 LIMIT 1 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_chats` [ RunTime:0.000958s ]
+[ sql ] [ SQL ] SELECT `chat_id`,`id` FROM `ch_chats` ORDER BY id asc [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname` FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `open` = 'on' ORDER BY id asc [ RunTime:0.000252s ]
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\019925771a8ba98e5bad45ccde679eb7.php:225]
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\019925771a8ba98e5bad45ccde679eb7.php:346]
+
+---------------------------------------------------------------
+[ 2024-02-27T09:27:26+08:00 ] 127.0.0.1 127.0.0.1 GET /public/home/health/css/bootstrap.min.css.map
+[ log ] www.tp5.com/public/home/health/css/bootstrap.min.css.map [运行时间：0.025511s][吞吐率：39.20req/s] [内存消耗：1,605.27kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'home',
+    2 => 'health',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2024-02-27T14:02:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/trace/tracelist
+[ log ] www.tp5.com/admin/trace/tracelist [运行时间：1.093980s][吞吐率：0.91req/s] [内存消耗：3,655.76kb] [文件加载：72]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'tracelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->traceList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\trace\tracelist.html [ array (
+  0 => 'viewMenu',
+  1 => 'b_project',
+  2 => 'bProject',
+  3 => 'count',
+  4 => 'userInfo',
+  5 => 'app_type',
+  6 => 'app_name',
+  7 => 'status',
+  8 => 'package_name',
+  9 => 'api_vps',
+  10 => 'bag_time',
+  11 => 'domain_url',
+  12 => 'app_password',
+  13 => 'info',
+  14 => 'role_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003205s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202) [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196,197,198) [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `app_name` <> ' ' LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `app_name` <> ' ' ORDER BY id desc LIMIT 0,10 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `app_name` <> ' ' LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname` FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `open` = 'on' ORDER BY id asc [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `b_project` [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT * FROM `b_project` [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.001189s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 165 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 165 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 164 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 164 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 163 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 163 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 162 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 162 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 161 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 161 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 160 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 160 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 159 LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 159 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 158 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 158 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000207s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:58]
+[ error ] [8]未定义变量: bag_vps[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:80]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+
+---------------------------------------------------------------
+[ 2024-02-27T14:26:12+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/trace/publicsavetrace
+[ log ] www.tp5.com/admin/trace/publicsavetrace [运行时间：1.156339s][吞吐率：0.86req/s] [内存消耗：3,266.29kb] [文件加载：70]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'publicsavetrace',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/trace/tracelist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->publicSaveTrace[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\trace\publicsavetrace.html [ array (
+  0 => 'getInfo',
+  1 => 'userInfo',
+  2 => 'chats',
+  3 => 'tele_chatid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004191s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001048s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001451s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202) [ RunTime:0.000662s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001645s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_chats` [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SELECT `chat_id`,`id` FROM `ch_chats` ORDER BY id asc [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname` FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `open` = 'on' ORDER BY id asc [ RunTime:0.000289s ]
+[ error ] [8]Trying to get property 'tele_chatid' of non-object[E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php:824]
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\019925771a8ba98e5bad45ccde679eb7.php:225]
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\019925771a8ba98e5bad45ccde679eb7.php:346]
+
+---------------------------------------------------------------
+[ 2024-02-27T14:35:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/chat/chatlist
+[ log ] www.tp5.com/admin/chat/chatlist [运行时间：0.921785s][吞吐率：1.08req/s] [内存消耗：3,081.34kb] [文件加载：70]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chat',
+    2 => 'chatlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Chat->chatList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Chat.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\chat\chatlist.html [ array (
+  0 => 'viewMenu',
+  1 => 'chat',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003319s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202) [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_chats` [ RunTime:0.001068s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_chats` LIMIT 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT `id`,`chat_id`,`detail` FROM `ch_chats` ORDER BY id asc LIMIT 0,10 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Chat'  AND `view_name` = 'chatlist' LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 193 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (194,195) [ RunTime:0.000494s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 讨论组新增 - assumed '讨论组新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\bd88c2d6fa1fcbf240bf2505774d1a76.php:109]
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\bd88c2d6fa1fcbf240bf2505774d1a76.php:153]
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\bd88c2d6fa1fcbf240bf2505774d1a76.php:153]
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\bd88c2d6fa1fcbf240bf2505774d1a76.php:153]
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\bd88c2d6fa1fcbf240bf2505774d1a76.php:153]
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\bd88c2d6fa1fcbf240bf2505774d1a76.php:153]
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\bd88c2d6fa1fcbf240bf2505774d1a76.php:153]
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\bd88c2d6fa1fcbf240bf2505774d1a76.php:153]
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\bd88c2d6fa1fcbf240bf2505774d1a76.php:153]
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\bd88c2d6fa1fcbf240bf2505774d1a76.php:153]
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\bd88c2d6fa1fcbf240bf2505774d1a76.php:153]
+
+---------------------------------------------------------------
+[ 2024-02-27T14:58:51+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/trace/tracelist
+[ log ] www.tp5.com/admin/trace/tracelist [运行时间：1.035463s][吞吐率：0.97req/s] [内存消耗：3,655.17kb] [文件加载：72]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'tracelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->traceList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\trace\tracelist.html [ array (
+  0 => 'viewMenu',
+  1 => 'b_project',
+  2 => 'bProject',
+  3 => 'count',
+  4 => 'userInfo',
+  5 => 'app_type',
+  6 => 'app_name',
+  7 => 'status',
+  8 => 'package_name',
+  9 => 'api_vps',
+  10 => 'bag_time',
+  11 => 'domain_url',
+  12 => 'app_password',
+  13 => 'info',
+  14 => 'role_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004003s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202) [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196,197,198) [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `app_name` <> ' ' LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `app_name` <> ' ' ORDER BY id desc LIMIT 0,10 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `app_name` <> ' ' LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname` FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `open` = 'on' ORDER BY id asc [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `b_project` [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT * FROM `b_project` [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 165 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 165 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 164 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 164 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 163 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 163 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 162 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 162 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 161 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 161 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 160 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 160 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 159 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 159 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 158 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 158 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000173s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:58]
+[ error ] [8]未定义变量: bag_vps[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:80]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+
+---------------------------------------------------------------
+[ 2024-02-27T14:59:06+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/trace/publicsavetrace?id=165
+[ log ] www.tp5.com/admin/trace/publicsavetrace?id=165 [运行时间：0.190990s][吞吐率：5.24req/s] [内存消耗：3,273.16kb] [文件加载：70]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'publicsavetrace',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/trace/tracelist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '165',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->publicSaveTrace[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\trace\publicsavetrace.html [ array (
+  0 => 'getInfo',
+  1 => 'userInfo',
+  2 => 'chats',
+  3 => 'tele_chatid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003656s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001065s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001096s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202) [ RunTime:0.000594s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001222s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 165 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_chats` [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT `chat_id`,`id` FROM `ch_chats` ORDER BY id asc [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname` FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `open` = 'on' ORDER BY id asc [ RunTime:0.000333s ]
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\019925771a8ba98e5bad45ccde679eb7.php:225]
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\019925771a8ba98e5bad45ccde679eb7.php:346]
+
+---------------------------------------------------------------
+[ 2024-02-27T14:59:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/trace/tracelist
+[ log ] www.tp5.com/admin/trace/tracelist [运行时间：0.065365s][吞吐率：15.30req/s] [内存消耗：3,655.17kb] [文件加载：72]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'tracelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->traceList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\trace\tracelist.html [ array (
+  0 => 'viewMenu',
+  1 => 'b_project',
+  2 => 'bProject',
+  3 => 'count',
+  4 => 'userInfo',
+  5 => 'app_type',
+  6 => 'app_name',
+  7 => 'status',
+  8 => 'package_name',
+  9 => 'api_vps',
+  10 => 'bag_time',
+  11 => 'domain_url',
+  12 => 'app_password',
+  13 => 'info',
+  14 => 'role_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002990s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001324s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001705s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202) [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196,197,198) [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001316s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `app_name` <> ' ' LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `app_name` <> ' ' ORDER BY id desc LIMIT 0,10 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `app_name` <> ' ' LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname` FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `open` = 'on' ORDER BY id asc [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `b_project` [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT * FROM `b_project` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.001615s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 165 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 165 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 164 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 164 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 163 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 163 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 162 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 162 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 161 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 161 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 160 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 160 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 159 LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 159 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 158 LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 158 LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000204s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:58]
+[ error ] [8]未定义变量: bag_vps[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:80]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:524]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:529]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\29d3b256a48538a63301d8874c81afb7.php:533]
+
+---------------------------------------------------------------
+[ 2024-02-27T14:59:54+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/trace/tostatusonelist
+[ log ] www.tp5.com/admin/trace/tostatusonelist [运行时间：0.191081s][吞吐率：5.23req/s] [内存消耗：3,638.92kb] [文件加载：72]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'tostatusonelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->toStatusOneList[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\trace\tostatusonelist.html [ array (
+  0 => 'viewMenu',
+  1 => 'count',
+  2 => 'userInfo',
+  3 => 'b_project',
+  4 => 'bProject',
+  5 => 'app_type',
+  6 => 'app_name',
+  7 => 'status',
+  8 => 'package_name',
+  9 => 'bag_vps',
+  10 => 'bag_time',
+  11 => 'domain_url',
+  12 => 'app_password',
+  13 => 'info',
+  14 => 'role_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001105s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001521s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001490s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001306s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202) [ RunTime:0.000969s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tostatusonelist' LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 171 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (172,173,174) [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.003100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `status` = 1  AND `app_name` <> ' ' LIMIT 1 [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `status` = 1  AND `app_name` <> ' ' ORDER BY id desc LIMIT 0,10 [ RunTime:0.001336s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `status` = 1  AND `app_name` <> ' ' LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname` FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `open` = 'on' ORDER BY id asc [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `b_project` [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT * FROM `b_project` [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 163 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 163 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 160 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 160 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 148 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 148 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 143 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 143 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 140 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 140 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 139 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 139 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 135 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 135 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 133 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 133 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 129 LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 129 LIMIT 1 [ RunTime:0.000215s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [8]未定义变量: api_vps[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:74]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:492]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:497]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\c00c464df3ded0574c7a999c2922e461.php:501]
+
+---------------------------------------------------------------
+[ 2024-02-27T15:00:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/trace/tracelistymd
+[ log ] www.tp5.com/admin/trace/tracelistymd [运行时间：0.170041s][吞吐率：5.88req/s] [内存消耗：3,607.80kb] [文件加载：71]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'trace',
+    2 => 'tracelistymd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ag9amerl5foctdj0t8rnv14ttt',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Trace->traceListymd[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\trace\tracelistymd.html [ array (
+  0 => 'bProject',
+  1 => 'count',
+  2 => 'userInfo',
+  3 => 'role_id',
+  4 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003056s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,198,199,200,201,202) [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL ORDER BY id desc LIMIT 0,10 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname` FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `open` = 'on' ORDER BY id asc [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `b_project` [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `b_project` [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.001219s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 165 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 165 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 164 LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 164 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 163 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 163 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 162 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 162 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 161 LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 161 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 160 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 160 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 159 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 159 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 158 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 158 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 157 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 157 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000205s ]
+[ error ] [8]未定义变量: map[E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php:225]
+[ error ] [8]未定义变量: map[E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Trace.php:247]
+[ error ] [8]未定义变量: down_reason[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:69]
+[ error ] [8]未定义变量: down_reason[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:70]
+[ error ] [8]未定义变量: down_reason[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:71]
+[ error ] [8]未定义变量: down_reason[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:72]
+[ error ] [8]未定义变量: publish_id[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:84]
+[ error ] [8]未定义变量: publish_id[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:86]
+[ error ] [8]未定义变量: publish_id[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:86]
+[ error ] [8]未定义变量: down_time[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:99]
+[ error ] [8]未定义变量: down_time[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:100]
+[ error ] [8]未定义变量: down_time[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:101]
+[ error ] [8]未定义变量: down_time[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:102]
+[ error ] [8]未定义变量: up_time[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:114]
+[ error ] [8]未定义变量: up_time[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:115]
+[ error ] [8]未定义变量: up_time[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:116]
+[ error ] [8]未定义变量: up_time[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:117]
+[ error ] [8]未定义变量: bag_time[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:129]
+[ error ] [8]未定义变量: bag_time[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:130]
+[ error ] [8]未定义变量: bag_time[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:131]
+[ error ] [8]未定义变量: bag_time[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:132]
+[ error ] [8]未定义变量: b_project[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:146]
+[ error ] [8]未定义变量: b_project[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:146]
+[ error ] [8]未定义变量: b_project[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:146]
+[ error ] [8]未定义变量: b_project[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:146]
+[ error ] [8]未定义变量: monthInput[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:157]
+[ error ] [8]未定义变量: yearInput[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:162]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [2]Illegal string offset 'nickname'[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+[ error ] [8]Uninitialized string offset: 0[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\056022e2f15361c54411c9201520c826.php:514]
+
+---------------------------------------------------------------

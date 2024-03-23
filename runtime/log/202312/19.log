@@ -1,0 +1,1488 @@
+[ 2023-12-19T11:25:51+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.017811s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.011032s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001246s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001287s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196) [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001510s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL ORDER BY id desc LIMIT 140,10 [ RunTime:0.001435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.001796s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 8 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 8 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 7 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 7 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 6 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 6 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 5 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 5 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 4 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 4 LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 3 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 3 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 2 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 2 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 1 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 1 LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000523s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T11:26:38+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.022161s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000965s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001269s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196) [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL ORDER BY id desc LIMIT 140,10 [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.001407s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 8 LIMIT 1 [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 8 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 7 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 7 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 6 LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 6 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 5 LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 5 LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 4 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 4 LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 3 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 3 LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 2 LIMIT 1 [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 2 LIMIT 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 1 LIMIT 1 [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 1 LIMIT 1 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000689s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T11:26:48+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.029662s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.003359s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.001633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.004652s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.003053s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.003705s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.002515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001499s ]
+[ sql ] [ SQL ] UPDATE `ch_app_trace`  SET `update_switch`='off',`update_time`='2023-12-19 11:26:48'  WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 1 [ RunTime:0.024205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_logs` [ RunTime:0.002692s ]
+[ sql ] [ SQL ] INSERT INTO `ch_logs` (`title` , `content` , `update_time` , `user_id` , `ip` , `create_time`) VALUES ('切换热更新开关' , '切换热更新开关【id： 1】 的状态为：<strong>关闭</strong>' , '2023-12-19 11:26:48' , 2 , '127.0.0.1' , '2023-12-19 11:26:48') [ RunTime:0.032497s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:27:07+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002189s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.003683s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.000952s ]
+[ sql ] [ SQL ] UPDATE `ch_app_trace`  SET `update_switch`='on',`update_time`='2023-12-19 11:27:07'  WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 1 [ RunTime:0.038915s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_logs` [ RunTime:0.000831s ]
+[ sql ] [ SQL ] INSERT INTO `ch_logs` (`title` , `content` , `update_time` , `user_id` , `ip` , `create_time`) VALUES ('切换热更新开关' , '切换热更新开关【id： 1】 的状态为：<strong>开启</strong>' , '2023-12-19 11:27:07' , 2 , '127.0.0.1' , '2023-12-19 11:27:07') [ RunTime:0.056892s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:31:57+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.050960s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.031718s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.008231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.002952s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.002321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.002546s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.002224s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:32:21+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.031860s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.022832s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.004857s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001810s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001830s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.002128s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:33:26+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.064313s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.065046s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.016478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.003846s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.002452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.002340s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.002714s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196) [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001693s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL ORDER BY id desc LIMIT 140,10 [ RunTime:0.001127s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.022763s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 8 LIMIT 1 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 8 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.477811s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 7 LIMIT 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 7 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 6 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 6 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 5 LIMIT 1 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 5 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 4 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 4 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 3 LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 3 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 2 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 2 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 1 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 1 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000390s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T11:33:34+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.036106s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.025180s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.016071s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.016985s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001777s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001329s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:33:36+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.028915s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001559s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001162s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001246s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001548s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:33:38+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002536s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001328s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001607s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:33:39+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002448s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001093s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001777s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.001051s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001297s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001127s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:33:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.004228s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.026999s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.066599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.002487s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.001271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.002388s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:33:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.003997s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001616s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001776s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.001098s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001762s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.002014s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:33:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.012942s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001544s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.001182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001531s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.006619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001453s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001689s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:33:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.003834s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001356s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001766s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001157s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000764s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:33:50+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.021585s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001299s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.016956s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001090s ]
+[ sql ] [ SQL ] UPDATE `ch_app_trace`  SET `update_switch`='off',`update_time`='2023-12-19 11:33:50'  WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 1 [ RunTime:0.054553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_logs` [ RunTime:0.014761s ]
+[ sql ] [ SQL ] INSERT INTO `ch_logs` (`title` , `content` , `update_time` , `user_id` , `ip` , `create_time`) VALUES ('切换热更新开关' , '切换热更新开关【id： 1】 的状态为：<strong>关闭</strong>' , '2023-12-19 11:33:50' , 2 , '127.0.0.1' , '2023-12-19 11:33:50') [ RunTime:0.054512s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:33:52+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.004952s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.008259s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001566s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001050s ]
+[ sql ] [ SQL ] UPDATE `ch_app_trace`  SET `update_switch`='on',`update_time`='2023-12-19 11:33:52'  WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 1 [ RunTime:0.050286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_logs` [ RunTime:0.000906s ]
+[ sql ] [ SQL ] INSERT INTO `ch_logs` (`title` , `content` , `update_time` , `user_id` , `ip` , `create_time`) VALUES ('切换热更新开关' , '切换热更新开关【id： 1】 的状态为：<strong>开启</strong>' , '2023-12-19 11:33:52' , 2 , '127.0.0.1' , '2023-12-19 11:33:52') [ RunTime:0.076540s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:34:39+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.017525s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.036719s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.002583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.003877s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.002259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.003088s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.004779s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:34:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.004283s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001195s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.002033s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:34:46+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.021084s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.024936s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.007647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001361s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001753s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001297s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:34:51+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.026389s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.004195s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.001801s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.003703s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.008267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.003004s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.003052s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:02+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.009019s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.025673s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.007167s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000672s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:04+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002302s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.002216s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000831s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:06+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002872s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001128s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001198s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:06+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.008372s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001606s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001358s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001264s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001335s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:06+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002085s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000705s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:06+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.004685s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001465s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001171s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001278s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001658s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:06+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002901s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000961s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:07+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.004489s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001459s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001264s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000936s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000678s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:07+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.004015s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.009500s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001796s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001057s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:07+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.003578s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001432s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000781s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:07+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015361s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.002854s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.001135s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001825s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.001116s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.002053s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001477s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:07+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002425s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000654s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002030s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.002225s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001146s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001323s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001098s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002187s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001826s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001193s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.004588s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000790s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002388s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001705s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001250s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.003371s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001249s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.001030s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001645s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001673s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.002349s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:09+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002956s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000949s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001727s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001538s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:09+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015875s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.002562s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.002483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.002104s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.001711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001243s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001290s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:09+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002114s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000655s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002025s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000685s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002831s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001289s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000828s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.003845s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001516s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000656s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002550s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001181s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.001554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.002374s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000666s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002808s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001416s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001155s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001191s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002008s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.002257s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001158s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001048s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:36:11+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002185s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001558s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001319s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:40:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002459s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.008367s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.004898s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000793s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:40:09+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002967s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000728s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:40:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002457s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001168s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001147s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000816s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:40:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.021128s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.005192s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.001566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.002387s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.001474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001888s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.002092s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001338s ]
+[ sql ] [ SQL ] UPDATE `ch_app_trace`  SET `update_switch`='off',`update_time`='2023-12-19 11:40:17'  WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 1 [ RunTime:0.040901s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_logs` [ RunTime:0.001056s ]
+[ sql ] [ SQL ] INSERT INTO `ch_logs` (`title` , `content` , `update_time` , `user_id` , `ip` , `create_time`) VALUES ('切换热更新开关' , '切换热更新开关【id： 1】 的状态为：<strong>关闭</strong>' , '2023-12-19 11:40:17' , 2 , '127.0.0.1' , '2023-12-19 11:40:17') [ RunTime:0.065173s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:40:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002300s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.014402s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001320s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001062s ]
+[ sql ] [ SQL ] UPDATE `ch_app_trace`  SET `update_switch`='on',`update_time`='2023-12-19 11:40:18'  WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 1 [ RunTime:0.036161s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_logs` [ RunTime:0.000905s ]
+[ sql ] [ SQL ] INSERT INTO `ch_logs` (`title` , `content` , `update_time` , `user_id` , `ip` , `create_time`) VALUES ('切换热更新开关' , '切换热更新开关【id： 1】 的状态为：<strong>开启</strong>' , '2023-12-19 11:40:18' , 2 , '127.0.0.1' , '2023-12-19 11:40:18') [ RunTime:0.029092s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:45:30+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002159s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000698s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.003182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 0 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_chats` [ RunTime:0.015341s ]
+[ sql ] [ SQL ] SELECT `chat_id`,`id` FROM `ch_chats` ORDER BY id asc [ RunTime:0.063930s ]
+[ error ] [8]Trying to get property 'tele_chatid' of non-object
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T11:45:33+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002207s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000803s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.003491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001190s ]
+[ sql ] [ SQL ] INSERT INTO `ch_app_trace` (`status` , `app_name` , `app_function` , `app_type` , `app_package` , `app_gmail` , `vps_password` , `google_auth` , `bag_vps` , `api_vps` , `bag_time` , `blocked_cause` , `google_play_link` , `signature` , `package_name` , `main_name` , `domain_url` , `privacy_agreement_url` , `jump_switch` , `jump_url` , `google_sharch_status` , `https_status` , `up_time` , `down_time` , `down_reason` , `enter_time` , `google_email_password` , `google_assist_email` , `spare_code` , `vps_username` , `afdev` , `sha1` , `tele_chatid` , `update_switch` , `update_url` , `user_id` , `update_time` , `create_time`) VALUES (1 , '' , '' , 1 , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , NULL , '' , 0 , 0 , '' , '' , '' , '2023-12-19 11:45:32' , '' , '' , '' , '' , '' , '' , '' , NULL , '' , 2 , '2023-12-19 11:45:32' , '2023-12-19 11:45:32') [ RunTime:0.031566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.001932s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 156 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_logs` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] INSERT INTO `ch_logs` (`title` , `content` , `update_time` , `user_id` , `ip` , `create_time`) VALUES ('新增数据' , '新增数据:{\"status\":\"1\",\"app_name\":\"\",\"app_function\":\"\",\"app_type\":\"1\",\"app_package\":\"\",\"app_gmail\":\"\",\"vps_password\":\"\",\"google_auth\":\"\",\"bag_vps\":\"\",\"api_vps\":\"\",\"bag_time\":\"\",\"blocked_cause\":\"\",\"google_play_link\":\"\",\"signature\":\"\",\"package_name\":\"\",\"main_name\":\"\",\"domain_url\":\"\",\"privacy_agreement_url\":\"\",\"jump_switch\":null,\"jump_url\":\"\",\"google_sharch_status\":\"0\",\"https_status\":\"0\",\"up_time\":\"\",\"down_time\":\"\",\"down_reason\":\"\",\"enter_time\":\"2023-12-19 11:45:32\",\"google_email_password\":\"\",\"google_assist_email\":\"\",\"spare_code\":\"\",\"vps_username\":\"\",\"afdev\":\"\",\"sha1\":\"\",\"tele_chatid\":\"\",\"update_switch\":null,\"update_url\":\"\",\"user_id\":2}{\"更新批次为：\":1,\"更新原因为：\":\"\"}' , '2023-12-19 11:45:32' , 2 , '127.0.0.1' , '2023-12-19 11:45:32') [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 156 LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] INSERT INTO `ch_app_trace_update` (`app_id` , `update_batch` , `update_reason` , `update_time` , `create_time`) VALUES (156 , 1 , '' , '2023-12-19 11:45:32' , '2023-12-19 11:45:32') [ RunTime:0.000385s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T11:45:35+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002304s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.012221s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.001580s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.002422s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196) [ RunTime:0.001578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001354s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL ORDER BY id desc LIMIT 0,10 [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.001230s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 156 LIMIT 1 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 156 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 153 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 153 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 152 LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 152 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 151 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 151 LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 150 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 150 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 149 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 149 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 148 LIMIT 1 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 148 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 147 LIMIT 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 147 LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000463s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T11:45:37+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.011442s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.047292s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.045800s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001234s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000967s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.017784s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 156 LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_chats` [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SELECT `chat_id`,`id` FROM `ch_chats` ORDER BY id asc [ RunTime:0.000708s ]
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T11:45:39+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002300s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001062s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196) [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL ORDER BY id desc LIMIT 0,10 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.003220s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 156 LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 156 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 153 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 153 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 152 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 152 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 151 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 151 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 150 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 150 LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 149 LIMIT 1 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 149 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 148 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 148 LIMIT 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 147 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 147 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000473s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T11:46:51+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002356s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `id` = 156 [ RunTime:0.000579s ]
+[ sql ] [ SQL ] UPDATE `ch_app_trace`  SET `update_time`='2023-12-19 11:46:51',`delete_time`='2023-12-19 11:46:51'  WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 156 [ RunTime:0.036966s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_logs` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] INSERT INTO `ch_logs` (`title` , `content` , `update_time` , `user_id` , `ip` , `create_time`) VALUES ('删除数据' , '删除数据【id： 156】 的数据' , '2023-12-19 11:46:51' , 2 , '127.0.0.1' , '2023-12-19 11:46:51') [ RunTime:0.029447s ]
+
+---------------------------------------------------------------
+[ 2023-12-19T12:00:55+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002301s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196) [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL ORDER BY id desc LIMIT 140,10 [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.013290s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 8 LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 8 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.010990s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 7 LIMIT 1 [ RunTime:0.001969s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 7 LIMIT 1 [ RunTime:0.001021s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.001579s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 6 LIMIT 1 [ RunTime:0.001770s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 6 LIMIT 1 [ RunTime:0.001172s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.001609s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 5 LIMIT 1 [ RunTime:0.001293s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 5 LIMIT 1 [ RunTime:0.000953s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.001512s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 4 LIMIT 1 [ RunTime:0.000943s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 4 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 3 LIMIT 1 [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 3 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 2 LIMIT 1 [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 2 LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 1 LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 1 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000685s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T14:22:03+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.060826s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.015816s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.004585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.008227s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.001761s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.002349s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.002049s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_website` [ RunTime:0.016177s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_website` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.010723s ]
+[ sql ] [ SQL ] SELECT `p`.`role_id`,`p`.`menu_id`,`m`.`id`,`m`.`name`,`m`.`module_name`,`m`.`controller_name`,`m`.`view_name`,`m`.`parent_id`,`m`.`is_menu`,`m`.`sort` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `m`.`is_menu` = 1 ORDER BY m.sort asc [ RunTime:0.009354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_role` [ RunTime:0.001139s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 1  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) ORDER BY sort asc [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 7  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.001324s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 6  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 4  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 193  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 156  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) ORDER BY sort asc [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.001362s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 171  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 188  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 167  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) ORDER BY sort asc [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 168  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 192  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 175  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) ORDER BY sort asc [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 176  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 179  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 181  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196)  AND `is_menu` = 1 [ RunTime:0.000452s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+
+---------------------------------------------------------------
+[ 2023-12-19T14:22:04+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.019505s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000836s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2023%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.324251s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2023-12%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.009256s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2023-12-19%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000681s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2023-12-19%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000689s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2023-12%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.187015s ]
+[ sql ] [ SQL ] select case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end as name from ch_app_trace a where a.update_time like "%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000978s ]
+[ error ] [8]未定义变量: year
+
+---------------------------------------------------------------
+[ 2023-12-19T14:22:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.021222s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001013s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.013295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_chats` [ RunTime:0.008784s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_chats` LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT `id`,`chat_id`,`detail` FROM `ch_chats` ORDER BY id asc LIMIT 0,10 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Chat'  AND `view_name` = 'chatlist' LIMIT 1 [ RunTime:0.002537s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 193 [ RunTime:0.002188s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (194,195) [ RunTime:0.003643s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 讨论组新增 - assumed '讨论组新增' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 讨论组删除 - assumed '讨论组删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T14:22:12+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.020286s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196) [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.011908s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.022193s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL ORDER BY id desc LIMIT 0,10 [ RunTime:0.001364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.004011s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.021327s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.006298s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 153 LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 153 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 152 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 152 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 151 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 151 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 150 LIMIT 1 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 150 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 149 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 149 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 148 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 148 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 147 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 147 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 146 LIMIT 1 [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 146 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000418s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T14:22:14+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002230s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.021614s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.001985s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.002984s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.005891s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.003167s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.002376s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.024879s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.013196s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 155 LIMIT 1 [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_chats` [ RunTime:0.001250s ]
+[ sql ] [ SQL ] SELECT `chat_id`,`id` FROM `ch_chats` ORDER BY id asc [ RunTime:0.008740s ]
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T14:22:19+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002171s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.004737s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196) [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.019265s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.009659s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL ORDER BY id desc LIMIT 0,10 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.012639s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.010990s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 153 LIMIT 1 [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 153 LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 152 LIMIT 1 [ RunTime:0.001165s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 152 LIMIT 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 151 LIMIT 1 [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 151 LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 150 LIMIT 1 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 150 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 149 LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 149 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.009960s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 148 LIMIT 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 148 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 147 LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 147 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 146 LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 146 LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000428s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T14:22:20+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002940s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001545s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.000894s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001236s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL  AND `id` = 155 LIMIT 1 [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_chats` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `chat_id`,`id` FROM `ch_chats` ORDER BY id asc [ RunTime:0.015723s ]
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-19T14:22:22+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002249s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.001559s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.001609s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001342s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001523s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196) [ RunTime:0.001230s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Trace'  AND `view_name` = 'tracelist' LIMIT 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162 [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (157,158,159,160,161,164,165,166,169,170,196) [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace` [ RunTime:0.001413s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_app_trace` WHERE  `ch_app_trace`.`delete_time` IS NULL ORDER BY id desc LIMIT 0,10 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_app_trace_update` [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 155 LIMIT 1 [ RunTime:0.000756s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 154 LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 153 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 153 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 152 LIMIT 1 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 152 LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 151 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 151 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 150 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 150 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 149 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 149 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 148 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 148 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 147 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 147 LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 146 LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_app_trace_update` WHERE  `app_id` = 146 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] select a.id,a.username,a.nickname,a.role_id,a.open,b.id as user_role_id,b.name from ch_user as  a left join ch_role as b on a.role_id = b.id where a.id=2 and a.open = 'on' [ RunTime:0.000639s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Illegal string offset 'nickname'
+[ error ] [8]Uninitialized string offset: 0
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------

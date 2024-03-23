@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>用户维护</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="__LAYUI__/css/layui.css"  media="all">
+   <link rel="stylesheet" href="__LAYUI__/tab/layui.css?t=1619028572570" media="all">
+   <link href="__HOME__/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+   <link href="__HOME__/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+  <link href="__HOME__/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+  <link href="__ADMIN__/css/style.min.css" rel="stylesheet">
+   <style>
+    body{margin: 10px;}
+  </style>
+  <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+  <style media="screen">
+      .layui-inline{width: 30%;}
+      .layui-form-label{width: 110px;}
+      .layui-fluid{padding:5px}
+      .layui-tab-item{margin-top: -10px;}
+  </style>
+</head>
+<body class="gray-bg">
+    
+      <div class="layui-fluid">
+          <div class="layui-card">
+            <div class="layui-card-body" style="padding: 15px;">
+                <form class="layui-form" action="{:url('publicsavetraceone')}" method="post" data-type="ajax">
+                <div class="layui-form-item" style="height: 700px">
+                    <div class="layui-inline">
+                        <label class="layui-form-label"> 应用名</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="app_name" value="{if $getInfo['app_name']}{$getInfo['app_name']}{/if}" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label"> 包名</label>
+                        <div class="layui-input-inline">
+                            <input type="tel" name="package_name" value="{if $getInfo['package_name']}{$getInfo['package_name']}{/if}" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label"> 主类名</label>
+                        <div class="layui-input-inline">
+                            <input type="tel" name="main_name" value="{if $getInfo['main_name']}{$getInfo['main_name']}{/if}" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label"> 提包服务器</label>
+                        <div class="layui-input-inline">
+                            <input type="tel" name="bag_vps" value="{if $getInfo['bag_vps']}{$getInfo['bag_vps']}{/if}" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label"> 接口服务器</label>
+                        <div class="layui-input-inline">
+                            <input type="tel" name="api_vps" value="{if $getInfo['api_vps']}{$getInfo['api_vps']}{/if}" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label"> 服务器密码</label>
+                        <div class="layui-input-inline">
+                            <input type="tel" name="vps_password" value="{if $getInfo['vps_password']}{$getInfo['vps_password']}{/if}" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label"> Google Play链接</label>
+                        <div class="layui-input-inline">
+                            <input type="tel" name="google_play_link" value="{if $getInfo['google_play_link']}{$getInfo['google_play_link']}{/if}" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label"> 数字签名</label>
+                        <div class="layui-input-inline">
+                            <input type="tel" name="signature" value="{if $getInfo['signature']}{$getInfo['signature']}{/if}" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label"> 隐私协议地址</label>
+                        <div class="layui-input-inline">
+                            <input type="tel" name="privacy_agreement_url" value="{if $getInfo['privacy_agreement_url']}{$getInfo['privacy_agreement_url']}{/if}" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label"> 上架日期</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="up_time" value="{if $getInfo['up_time']}{$getInfo['up_time']}{/if}" autocomplete="off" class="layui-input" id="up_time">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label"> 更新原因</label>
+                        <div class="layui-input-inline">
+                            <input type="tel" name="update_reason" value="{if $getInfo['update_reason']}{$getInfo['update_reason']}{/if}" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+
+                    <div class="layui-input-block">
+                        <input type="hidden" name="id" value="{if condition='$getInfo.id neq 0'}{$getInfo['id']}{/if}">
+                        <div class="layui-footer" style="left: 75px;background:#fff;box-shadow: none;margin-top: 30px;">
+                        <button type="submit" class="layui-btn" lay-submit="" lay-filter="component-form-demo1">保存</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        <a  class="layui-btn layui-btn-normal layui-btn-radius" onclick="javascript:history.go(-1);">返回</a>
+                      </div>
+                    </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <script src="__HOME__/js/jquery.min.js"></script>
+        <script src="__ADMIN__/js/plugins/layer/layer.min.js"></script>
+        <script src="__LAYUI__/layui.js" charset="utf-8"></script>
+        <script src="__LAYUI__/layer_hplus.js" charset="utf-8"></script>
+
+        
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+    <script>
+
+    layui.use(['form', 'layer', 'layedit', 'laydate','upload'], function(){
+        //得到各种内置组件
+        var layer = layui.layer //弹层
+        ,form = layui.form
+        ,laydate = layui.laydate
+        ,upload = layui.upload
+        ,element = layui.element; //元素操作;
+
+        // 上架日期
+        laydate.render({
+            elem:'#up_time',
+            format:'yyyy/MM/dd'
+            , trigger: 'click'
+        });
+
+    });
+
+    </script>
+</body>
+</html>

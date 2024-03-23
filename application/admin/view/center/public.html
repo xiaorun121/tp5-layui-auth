@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <title>部门列表</title>
+        <script type="text/javascript" src="__PUBLIC__/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript">
+            jQuery.browser={};(function(){jQuery.browser.msie=false; jQuery.browser.version=0;if(navigator.userAgent.match(/MSIE ([0-9]+)./)){ jQuery.browser.msie=true;jQuery.browser.version=RegExp.$1;}})();
+        </script>
+
+        <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.min.css" />
+        <script type="text/javascript" src="__PUBLIC__/js/jquery.jBox-2.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jbox.css">
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/indexa.css">
+
+    </head>
+    <body class="fixed-sidebar full-height-layout white-bg" >
+          <style>
+        .stars{ overflow: hidden; clear: both; margin: 2px; padding: 10px; border: 1px saddlebrown solid;}
+        .stars span{ float: left; height: 20px; line-height: 20px; cursor:default;}
+        .stars i{width: 20px; height: 20px; line-height: 20px; float: left; margin-right: 20px; background: #ccc; color: #fff; text-align: center; cursor:default; font-style: normal;}
+        .stars .on{ color: #a71417;}
+    </style>
+
+
+
+<div style="overflow:auto;" id='div1'>
+<div> 欢迎进入自我评价</div>
+<form id="form1" name="form1" action="" method="post" onsubmit="return saveeval();">
+    {volist name="info" id="v" key="k"}
+        <div class="stars">
+            <span>{$k}。{$v.name}</span></br>
+
+            <i class="" score="1">★</i>
+            <i class="" score="2">★</i>
+            <i class="" score="3">★</i>
+            <i class="" score="4">★</i>
+            <i class="" score="5">★</i>
+            <input type="text" name='inp[]' style='width:35px;'/>
+         </div>
+     {/volist}
+
+    <div style="text-align:center;">
+               <dl class="lineD">
+                    <dt>您做一下简短的自我评价：</dt>
+                    <dd>
+                    <textarea name="content" style="width:100%;height:200px;"></textarea>
+                </dl>
+    </div>
+    <div class="page_btm">
+        <input type="submit" class="btn_b" value="确定" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="reset" class="btn_b" onclick="doReset()">
+     </div>
+</div>
+  <input type="hidden" id='tatol' name='tatol' style='width:35px;'/>
+  <input type="hidden"  name='pYear' style='width:35px;' value="{$pYear}" />
+  <input type="hidden"  name='pMonth' style='width:35px;' value="{$pMonth}" />
+
+</form>
+<script>
+    $(function(){
+        /*
+        * 鼠标点击，该元素包括该元素之前的元素获得样式,并给隐藏域input赋值
+        * 鼠标移入，样式随鼠标移动
+        * 鼠标移出，样式移除但被鼠标点击的该元素和之前的元素样式不变
+        * 每次触发事件，移除所有样式，并重新获得样式
+        * */
+        var stars = $('.stars');
+        var Len = stars.length;
+        //遍历每个评分的容器
+        for(i=0;i<Len;i++){
+            //每次触发事件，清除该项父容器下所有子元素的样式所有样式
+            function clearAll(obj){
+                obj.parent().children('i').removeClass('on');
+            }
+            stars.eq(i).find('i').click(function(){
+                var num = $(this).index()-1;
+                clearAll($(this));
+                //当前包括前面的元素都加上样式
+                $(this).addClass('on').prevAll('i').addClass('on');
+                //给隐藏域input赋值
+                $(this).siblings('input').val(num);
+            });
+            stars.eq(i).find('i').mouseover(function(){
+                var num = $(this).index();
+                clearAll($(this));
+                //当前包括前面的元素都加上样式
+                $(this).addClass('on').prevAll('i').addClass('on');
+            });
+            stars.eq(i).find('i').mouseout(function(){
+                clearAll($(this));
+                //触发点击事件后input有值
+                var score = $(this).siblings('input').val();
+                for(i=0;i<score;i++){
+                    $(this).parent().find('i').eq(i).addClass('on');
+                }
+            });
+        }
+    })
+
+    function doReset(){
+        $('.stars i').removeClass('on');
+        $("input[name='inp[]']").val('');
+    }
+
+    function saveeval(){
+        var div = $('.stars');
+        var input = div.length;
+        var tatol=0;
+        for(i=0;i<input;i++){
+            if($("input[name='inp[]']:eq("+i+")").val()==0){
+                $.jBox.tip('还有未完成的项目，请仔细检查', '提示');
+                return false;
+            }
+        var tatol =$("input[name='inp[]']:eq("+i+")").val()-(-tatol);
+        }
+        // if(tatol==50){
+        //     $.jBox.tip('此员工真有那么优秀吗？', '提示');
+        // }
+        // else{
+            $('#tatol').val(tatol);
+            savemygroupdesc();
+        // }
+        // alert(tatol)
+
+    }
+
+
+    function savemygroupdesc(){
+        //postdata('form1',"http://hkpcdemo.ljphp.top/index.php/user/performance/saveeval",'retdo');
+
+    }
+
+    function retdo(d)
+    {
+        if(d.code==1){
+            $.jBox.tip('评分成功');
+            window.setTimeout(function () {
+                window.parent.location.href="http://hkpcdemo.ljphp.top/index.php/user/performance/mygroup";
+            }, 1000);
+        }else{
+            $.jBox.tip('评分失败，请稍后再试！');
+
+        }
+    }
+</script>
+
+</body>
+</html>

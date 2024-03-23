@@ -1,0 +1,632 @@
+[ 2024-02-21T09:15:03+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/gatheradmin
+[ log ] www.tp5.com/admin/gather/gatheradmin [运行时间：1.627376s][吞吐率：0.61req/s] [内存消耗：3,144.55kb] [文件加载：70]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatheradmin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bp0jm44g3l5nkn3s2g78v6dg91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherAdmin[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\gatheradmin.html [ array (
+  0 => 'viewMenu',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057853s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001479s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Gather'  AND `view_name` = 'gatheradmin' LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001293s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (185,186,187) [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_backend` [ RunTime:0.056872s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL ORDER BY id desc LIMIT 0,10 [ RunTime:0.000286s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:51]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+
+---------------------------------------------------------------
+[ 2024-02-21T09:15:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/gatheradmin?page=2
+[ log ] www.tp5.com/admin/gather/gatheradmin?page=2 [运行时间：0.058158s][吞吐率：17.19req/s] [内存消耗：3,142.62kb] [文件加载：70]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatheradmin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bp0jm44g3l5nkn3s2g78v6dg91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/gather/gatheradmin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherAdmin[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\gatheradmin.html [ array (
+  0 => 'viewMenu',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001390s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001213s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Gather'  AND `view_name` = 'gatheradmin' LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001172s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (185,186,187) [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_backend` [ RunTime:0.001165s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL ORDER BY id desc LIMIT 10,10 [ RunTime:0.000296s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:51]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+
+---------------------------------------------------------------
+[ 2024-02-21T09:15:10+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/gatheradmin?page=1
+[ log ] www.tp5.com/admin/gather/gatheradmin?page=1 [运行时间：0.040703s][吞吐率：24.57req/s] [内存消耗：3,145.03kb] [文件加载：70]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatheradmin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bp0jm44g3l5nkn3s2g78v6dg91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/gather/gatheradmin?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherAdmin[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\gatheradmin.html [ array (
+  0 => 'viewMenu',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001068s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001244s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Gather'  AND `view_name` = 'gatheradmin' LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (185,186,187) [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_backend` [ RunTime:0.002721s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_backend` WHERE  `ch_backend`.`delete_time` IS NULL ORDER BY id desc LIMIT 0,10 [ RunTime:0.000274s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据新增 - assumed '数据新增' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:51]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:90]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\9d890fde48388a5879ee69990e7bf6f4.php:92]
+
+---------------------------------------------------------------
+[ 2024-02-21T09:31:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/publishdata
+[ log ] www.tp5.com/admin/gather/publishdata [运行时间：0.432749s][吞吐率：2.31req/s] [内存消耗：3,374.59kb] [文件加载：69]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'publishdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bp0jm44g3l5nkn3s2g78v6dg91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->publishData[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\publishdata.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001050s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_publish` [ RunTime:0.069191s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_publish` LIMIT 1 [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_publish` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_gather` [ RunTime:0.048277s ]
+[ sql ] [ SQL ] SELECT `title` FROM `ch_gather` WHERE  `id` = 34  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_backend` [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SELECT `url` FROM `ch_backend` WHERE  `id` = 22  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT `title` FROM `ch_gather` WHERE  `id` = 27  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT `url` FROM `ch_backend` WHERE  `id` = 22  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT `title` FROM `ch_gather` WHERE  `id` = 30  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT `url` FROM `ch_backend` WHERE  `id` = 22  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT `title` FROM `ch_gather` WHERE  `id` = 28  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT `url` FROM `ch_backend` WHERE  `id` = 22  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT `title` FROM `ch_gather` WHERE  `id` = 23  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT `url` FROM `ch_backend` WHERE  `id` = 22  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT `title` FROM `ch_gather` WHERE  `id` = 22  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT `url` FROM `ch_backend` WHERE  `id` = 22  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT `title` FROM `ch_gather` WHERE  `id` = 31  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT `url` FROM `ch_backend` WHERE  `id` = 22  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT `title` FROM `ch_gather` WHERE  `id` = 26  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT `url` FROM `ch_backend` WHERE  `id` = 21  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT `title` FROM `ch_gather` WHERE  `id` = 24  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT `url` FROM `ch_backend` WHERE  `id` = 21  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `title` FROM `ch_gather` WHERE  `id` = 30  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT `url` FROM `ch_backend` WHERE  `id` = 21  AND (  delete_time is  null ) LIMIT 1 [ RunTime:0.000255s ]
+[ error ] [8]未定义变量: username[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d04448c86cb4033401c5907c4e5ad48c.php:114]
+[ error ] [8]未定义变量: username[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\d04448c86cb4033401c5907c4e5ad48c.php:118]
+
+---------------------------------------------------------------
+[ 2024-02-21T09:31:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/gatherdata
+[ log ] www.tp5.com/admin/gather/gatherdata [运行时间：0.254239s][吞吐率：3.93req/s] [内存消耗：3,244.97kb] [文件加载：69]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatherdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bp0jm44g3l5nkn3s2g78v6dg91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherData[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\gatherdata.html [ array (
+  0 => 'viewMenu',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001181s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Gather'  AND `view_name` = 'gatherdata' LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (182,183,184) [ RunTime:0.000427s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+
+---------------------------------------------------------------
+[ 2024-02-21T09:31:20+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/gatherdata?page=15
+[ log ] www.tp5.com/admin/gather/gatherdata?page=15 [运行时间：0.087574s][吞吐率：11.42req/s] [内存消耗：3,315.49kb] [文件加载：69]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatherdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bp0jm44g3l5nkn3s2g78v6dg91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/gather/gatherdata',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '15',
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherData[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\gatherdata.html [ array (
+  0 => 'viewMenu',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000992s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Gather'  AND `view_name` = 'gatherdata' LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (182,183,184) [ RunTime:0.000405s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+
+---------------------------------------------------------------
+[ 2024-02-21T09:31:28+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/gatherdata?page=10
+[ log ] www.tp5.com/admin/gather/gatherdata?page=10 [运行时间：0.039076s][吞吐率：25.59req/s] [内存消耗：3,489.35kb] [文件加载：69]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatherdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bp0jm44g3l5nkn3s2g78v6dg91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/gather/gatherdata?page=15',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '10',
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherData[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\gatherdata.html [ array (
+  0 => 'viewMenu',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001046s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Gather'  AND `view_name` = 'gatherdata' LIMIT 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (182,183,184) [ RunTime:0.000491s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+
+---------------------------------------------------------------
+[ 2024-02-21T09:31:33+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/gatherdata?page=11
+[ log ] www.tp5.com/admin/gather/gatherdata?page=11 [运行时间：0.042679s][吞吐率：23.43req/s] [内存消耗：3,592.64kb] [文件加载：69]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatherdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bp0jm44g3l5nkn3s2g78v6dg91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/gather/gatherdata?page=10',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '11',
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherData[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\gatherdata.html [ array (
+  0 => 'viewMenu',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001018s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001192s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Gather'  AND `view_name` = 'gatherdata' LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.002337s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (182,183,184) [ RunTime:0.000678s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+
+---------------------------------------------------------------
+[ 2024-02-21T09:31:36+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/gather/gatherdata?page=13
+[ log ] www.tp5.com/admin/gather/gatherdata?page=13 [运行时间：0.042802s][吞吐率：23.36req/s] [内存消耗：3,411.35kb] [文件加载：69]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'gather',
+    2 => 'gatherdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bp0jm44g3l5nkn3s2g78v6dg91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tp5.com/admin/gather/gatherdata?page=11',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.tp5.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '13',
+)
+[ info ] [ RUN ] app\admin\controller\Gather->gatherData[ E:\phpstudy_pro\WWW\www.tp5.com\application\admin\controller\Gather.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\www.tp5.com/application/admin\view\gather\gatherdata.html [ array (
+  0 => 'viewMenu',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001207s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001415s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Gather'  AND `view_name` = 'gatherdata' LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178 [ RunTime:0.001203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001202s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (182,183,184) [ RunTime:0.000423s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls[E:\phpstudy_pro\WWW\www.tp5.com\thinkphp\library\think\db\Query.php:711]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+[ error ] [2]Use of undefined constant 数据修改 - assumed '数据修改' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:153]
+[ error ] [2]Use of undefined constant 数据删除 - assumed '数据删除' (this will throw an Error in a future version of PHP)[E:\phpstudy_pro\WWW\www.tp5.com\runtime\temp\b6bc05285b7e05b4a03481b74a2f9af9.php:158]
+
+---------------------------------------------------------------

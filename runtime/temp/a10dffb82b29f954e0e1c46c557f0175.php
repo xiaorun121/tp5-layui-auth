@@ -1,0 +1,2 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"E:\phpstudy_pro\WWW\www.tp5.com\public/../application/admin\view\gather\api.html";i:1710394817;}*/ ?>
+<iframe  src="https://0lzt7ot9yn.apifox.cn/api-143720345" width="100%" height="100%"></iframe>

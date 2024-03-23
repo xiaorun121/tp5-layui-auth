@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>讨论组新增</title>
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="__LAYUI__/css/layui.css" media="all" />
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+</head>
+
+<body>
+    <form class="layui-form" method="post" action="{:url('publicsavechat')}" data-type="ajax">
+        <div class="layui-form-item"></div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">讨论组id:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="chat_id" lay-verify="required"
+                    value="{if $getInfo['chat_id']}{$getInfo['chat_id']}{/if}" lay-reqtext="讨论组id是必填项，岂能为空？"
+                    placeholder="请输入讨论组id" autocomplete="off" class="layui-input" style="width: 270px" />
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">备注</label>
+            <div class="layui-input-inline">
+                <textarea placeholder="请输入备注" class="layui-textarea" name="detail" style="width: 270px">
+{if $getInfo['detail']}{$getInfo['detail']}{/if}</textarea>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">
+                    立即提交
+                </button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                <a class="layui-btn layui-btn-normal layui-btn-radius" onclick="javascript:history.go(-1);">返回</a>
+            </div>
+        </div>
+    </form>
+
+    <script src="__HOME__/js/jquery.min.js"></script>
+    <script src="__ADMIN__/js/plugins/layer/layer.min.js"></script>
+    <script src="__LAYUI__/layui.js" charset="utf-8"></script>
+    <script src="__LAYUI__/layer_hplus.js" charset="utf-8"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+    <script>
+        layui.use(["form"], function () {
+            var form = layui.form;
+
+            //监听指定开关
+            form.on("switch(switchTest)", function (data) {
+                layer.msg("用户状态：" + (this.checked ? "开启" : "禁用"), {
+                    offset: "6px",
+                });
+                //layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,493 @@
+[ 2023-12-28T09:21:35+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:1.444998s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:2.098728s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.305189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.025835s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.037225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.052256s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.057288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_role` [ RunTime:0.069799s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_role` WHERE  `ch_role`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.100579s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `ch_role`.`delete_time` IS NULL ORDER BY sort asc,id asc LIMIT 0,20 [ RunTime:0.045344s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Role'  AND `view_name` = 'rlist' LIMIT 1 [ RunTime:0.001404s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 6 [ RunTime:0.002687s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (44,45,46,50) [ RunTime:0.115692s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 角色新增 - assumed '角色新增' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 权限分配 - assumed '权限分配' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 角色修改 - assumed '角色修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 角色删除 - assumed '角色删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 权限分配 - assumed '权限分配' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 角色修改 - assumed '角色修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 角色删除 - assumed '角色删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-28T09:21:46+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.036342s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.034930s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.005377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.011961s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.014188s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.032511s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.025596s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` ORDER BY sort asc [ RunTime:0.034012s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 10 [ RunTime:0.010692s ]
+
+---------------------------------------------------------------
+[ 2023-12-28T09:21:49+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.006020s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.006111s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.010632s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.044423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_role` [ RunTime:0.022187s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ch_role` WHERE  `ch_role`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `ch_role`.`delete_time` IS NULL ORDER BY sort asc,id asc LIMIT 0,20 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Role'  AND `view_name` = 'rlist' LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 6 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (44,45,46,50) [ RunTime:0.000420s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 角色新增 - assumed '角色新增' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 权限分配 - assumed '权限分配' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 角色修改 - assumed '角色修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 角色删除 - assumed '角色删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 权限分配 - assumed '权限分配' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 角色修改 - assumed '角色修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 角色删除 - assumed '角色删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-28T11:42:01+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.825400s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.282973s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.034691s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.003155s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.003036s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.001277s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.019607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_website` [ RunTime:0.012606s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_website` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003701s ]
+[ sql ] [ SQL ] SELECT `p`.`role_id`,`p`.`menu_id`,`m`.`id`,`m`.`name`,`m`.`module_name`,`m`.`controller_name`,`m`.`view_name`,`m`.`parent_id`,`m`.`is_menu`,`m`.`sort` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `m`.`is_menu` = 1 ORDER BY m.sort asc [ RunTime:0.003197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_role` [ RunTime:0.007711s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.027117s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 1  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) ORDER BY sort asc [ RunTime:0.013317s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 7  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 6  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 4  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 193  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 156  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) ORDER BY sort asc [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.001309s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 171  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 188  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 167  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) ORDER BY sort asc [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 168  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 192  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 175  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) ORDER BY sort asc [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 176  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 179  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 181  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000464s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+
+---------------------------------------------------------------
+[ 2023-12-28T11:42:01+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.021498s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.055266s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.001086s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.002682s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.012473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.033297s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.013286s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2023%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.227410s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2023-12%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000746s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2023-12-28%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.019693s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2023-12-28%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000611s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2023-12%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.002287s ]
+[ sql ] [ SQL ] select case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end as name from ch_app_trace a where a.update_time like "%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.002366s ]
+[ error ] [8]未定义变量: year
+
+---------------------------------------------------------------
+[ 2023-12-28T11:42:02+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015332s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.019635s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.001390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.004015s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.001297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.016333s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.003640s ]
+
+---------------------------------------------------------------
+[ 2023-12-28T11:42:04+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.036319s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.033338s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.017689s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.009500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.002253s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.001897s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` ORDER BY sort asc [ RunTime:0.001048s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Menu'  AND `view_name` = 'mlist' LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (41,42,43) [ RunTime:0.022834s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 菜单新增 - assumed '菜单新增' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-28T11:42:05+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015666s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.045984s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.014577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.005746s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.021680s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `is_menu` = 1 ORDER BY sort asc [ RunTime:0.003011s ]
+
+---------------------------------------------------------------
+[ 2023-12-28T16:46:15+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.107799s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.157518s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.340113s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.006581s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.040424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.044464s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.130235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_website` [ RunTime:0.088387s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_website` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.077654s ]
+[ sql ] [ SQL ] SELECT `p`.`role_id`,`p`.`menu_id`,`m`.`id`,`m`.`name`,`m`.`module_name`,`m`.`controller_name`,`m`.`view_name`,`m`.`parent_id`,`m`.`is_menu`,`m`.`sort` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `m`.`is_menu` = 1 ORDER BY m.sort asc [ RunTime:0.305062s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_role` [ RunTime:0.020676s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050185s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 1  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) ORDER BY sort asc [ RunTime:0.010827s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 7  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 6  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 4  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 193  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 156  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) ORDER BY sort asc [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 162  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 171  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 188  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 167  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) ORDER BY sort asc [ RunTime:0.001099s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 168  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 192  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `ch_permission` WHERE  `role_id` = 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 175  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) ORDER BY sort asc [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 180  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 178  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 176  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 179  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 181  AND `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198)  AND `is_menu` = 1 [ RunTime:0.001617s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+[ error ] [8]未定义数组索引: child
+
+---------------------------------------------------------------
+[ 2023-12-28T16:46:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.008553s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.045275s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.019283s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.027563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.021112s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.031319s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2023%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.681327s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2023-12%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.000636s ]
+[ sql ] [ SQL ] select count(a.id) as value from ch_app_trace a where a.update_time like "2023-12-28%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.052551s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2023-12-28%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.030523s ]
+[ sql ] [ SQL ] select  count(a.id) as value,(case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end) as name from ch_app_trace a where a.update_time like "2023-12%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.001123s ]
+[ sql ] [ SQL ] select case a.status when 1  then "已上架" when 2 then "审核中" when 3 then "待审核" when 4 then "账号禁用" when 5 then "分配中" when 6 then "已暂停" when 7 then "待验证" when 8 then "已下架" when 9 then "账号关联" when 10 then "更新中" when 11 then "其他" end as name from ch_app_trace a where a.update_time like "%" and a.delete_time is NULL group by a.status ORDER BY a.STATUS asc [ RunTime:0.001245s ]
+[ error ] [8]未定义变量: year
+
+---------------------------------------------------------------
+[ 2023-12-28T16:46:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002184s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.054204s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.024376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.001147s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.019663s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.032767s ]
+
+---------------------------------------------------------------
+[ 2023-12-28T16:46:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002687s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.061236s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.002385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.025101s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.002237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.003318s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.046962s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` ORDER BY sort asc [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ch_menu` WHERE  `module_name` = 'admin'  AND `controller_name` = 'Menu'  AND `view_name` = 'mlist' LIMIT 1 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `parent_id` = 5 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT `p`.`id`,`m`.`name` FROM `ch_permission` `p` INNER JOIN `ch_menu` `m` ON `p`.`menu_id`=`m`.`id` WHERE  `p`.`role_id` = 1  AND `p`.`menu_id` IN (41,42,43) [ RunTime:0.114059s ]
+[ error ] [8192]The each() function is deprecated. This message will be suppressed on further calls
+[ error ] [2]Use of undefined constant 菜单新增 - assumed '菜单新增' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单修改 - assumed '菜单修改' (this will throw an Error in a future version of PHP)
+[ error ] [2]Use of undefined constant 菜单删除 - assumed '菜单删除' (this will throw an Error in a future version of PHP)
+
+---------------------------------------------------------------
+[ 2023-12-28T16:46:19+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002510s ] mysql:dbname=changheng;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_user` [ RunTime:0.065391s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_user` WHERE  `ch_user`.`delete_time` IS NULL  AND `id` = 2 LIMIT 1 [ RunTime:0.012820s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_permission` [ RunTime:0.011073s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_permission` WHERE  `ch_permission`.`delete_time` IS NULL  AND `role_id` = 1 [ RunTime:0.001887s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ch_menu` [ RunTime:0.051946s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `id` IN (1,7,5,41,42,43,6,44,45,46,50,4,47,48,49,9,10,11,76,76,77,78,79,80,82,86,88,89,90,91,93,94,95,96,97,98,99,100,103,105,106,107,108,109,110,111,112,113,114,115,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198) [ RunTime:0.006297s ]
+[ sql ] [ SQL ] SELECT * FROM `ch_menu` WHERE  `is_menu` = 1 ORDER BY sort asc [ RunTime:0.003052s ]
+
+---------------------------------------------------------------
